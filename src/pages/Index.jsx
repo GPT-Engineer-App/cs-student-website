@@ -11,7 +11,7 @@ const Index = () => {
           <Heading as="h1" size="xl">
             Jad Hneiny
           </Heading>
-          <Text fontSize="xl">Computer Science Student</Text>
+          <Text fontSize="xl">2nd Year Computer Science Student</Text>
         </Box>
       </Flex>
 
