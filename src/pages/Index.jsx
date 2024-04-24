@@ -22,38 +22,56 @@ const Index = () => {
         <Text>Hi, I'm John! I'm a passionate computer science student with a love for programming and problem-solving. I enjoy working on exciting projects and learning new technologies.</Text>
       </Box>
 
-      <Box marginBottom={8}>
-        <Heading as="h2" size="lg" marginBottom={4}>
-          Skills
-        </Heading>
-        <UnorderedList>
-          <ListItem>Java</ListItem>
-          <ListItem>Python</ListItem>
-          <ListItem>JavaScript</ListItem>
-          <ListItem>React</ListItem>
-          <ListItem>Node.js</ListItem>
-        </UnorderedList>
-      </Box>
+      <Accordion allowToggle marginBottom={8}>
+        <AccordionItem>
+          <AccordionButton>
+            <Box flex="1" textAlign="left">
+              <Heading as="h2" size="lg">
+                Skills
+              </Heading>
+            </Box>
+            <AccordionIcon />
+          </AccordionButton>
+          <AccordionPanel pb={4}>
+            <UnorderedList>
+              <ListItem>Java</ListItem>
+              <ListItem>Python</ListItem>
+              <ListItem>JavaScript</ListItem>
+              <ListItem>React</ListItem>
+              <ListItem>Node.js</ListItem>
+            </UnorderedList>
+          </AccordionPanel>
+        </AccordionItem>
+      </Accordion>
 
-      <Box marginBottom={8}>
-        <Heading as="h2" size="lg" marginBottom={4}>
-          Projects
-        </Heading>
-        <UnorderedList>
-          <ListItem>
-            <Link href="https://github.com/johndoe/project1" isExternal _hover={{ textDecoration: "underline" }}>
-              Project 1
-            </Link>{" "}
-            - A web application for task management
-          </ListItem>
-          <ListItem>
-            <Link href="https://github.com/johndoe/project2" isExternal>
-              Project 2
-            </Link>{" "}
-            - A machine learning model for image classification
-          </ListItem>
-        </UnorderedList>
-      </Box>
+      <Accordion allowToggle marginBottom={8}>
+        <AccordionItem>
+          <AccordionButton>
+            <Box flex="1" textAlign="left">
+              <Heading as="h2" size="lg">
+                Projects
+              </Heading>
+            </Box>
+            <AccordionIcon />
+          </AccordionButton>
+          <AccordionPanel pb={4}>
+            <UnorderedList>
+              <ListItem>
+                <Link href="https://github.com/johndoe/project1" isExternal _hover={{ textDecoration: "underline" }}>
+                  Project 1
+                </Link>{" "}
+                - A web application for task management
+              </ListItem>
+              <ListItem>
+                <Link href="https://github.com/johndoe/project2" isExternal>
+                  Project 2
+                </Link>{" "}
+                - A machine learning model for image classification
+              </ListItem>
+            </UnorderedList>
+          </AccordionPanel>
+        </AccordionItem>
+      </Accordion>
 
       <Accordion allowToggle marginBottom={8}>
         <AccordionItem>
@@ -76,42 +94,67 @@ const Index = () => {
         </AccordionItem>
       </Accordion>
 
-      <Box marginBottom={8}>
-        <Heading as="h2" size="lg" marginBottom={4}>
-          Certifications
-        </Heading>
-        <UnorderedList>
-          <ListItem>Introduction to Cybersecurity, Cisco - Dec 2023</ListItem>
-          <ListItem>Introduction to Data Science, Cisco - Jan 2024</ListItem>
-          <ListItem>Networking Basics, Cisco - Mar 2024</ListItem>
-        </UnorderedList>
-      </Box>
+      <Accordion allowToggle marginBottom={8}>
+        <AccordionItem>
+          <AccordionButton>
+            <Box flex="1" textAlign="left">
+              <Heading as="h2" size="lg">
+                Certifications
+              </Heading>
+            </Box>
+            <AccordionIcon />
+          </AccordionButton>
+          <AccordionPanel pb={4}>
+            <UnorderedList>
+              <ListItem>Introduction to Cybersecurity, Cisco - Dec 2023</ListItem>
+              <ListItem>Introduction to Data Science, Cisco - Jan 2024</ListItem>
+              <ListItem>Networking Basics, Cisco - Mar 2024</ListItem>
+            </UnorderedList>
+          </AccordionPanel>
+        </AccordionItem>
+      </Accordion>
 
-      <Box marginBottom={12}>
-        <Heading as="h2" size="lg" marginBottom={6}>
-          Experience
-        </Heading>
-        <Collapse startingHeight={100}>
-          <UnorderedList spacing={3}>
-            <ListItem>CafeConnect: University Cafeteria WebApp, Lead Programmer and Project Manager - Jan 2024 – May 2024</ListItem>
-            <ListItem>JK Networks: A Reliable Network on top of UDP, Lead Programmer and Project Manager - Jan 2024 – May 2024</ListItem>
-            <ListItem>Spell Master Bot: AI-like Bot Algorithm, Lead Programmer and Project Manager - Aug 2023 – Nov 2023</ListItem>
-            <ListItem>Personal Portfolio Website, Sole Programmer - Jan 2024 – Present</ListItem>
-          </UnorderedList>
-        </Collapse>
-      </Box>
+      <Accordion allowToggle marginBottom={12}>
+        <AccordionItem>
+          <AccordionButton>
+            <Box flex="1" textAlign="left">
+              <Heading as="h2" size="lg">
+                Experience
+              </Heading>
+            </Box>
+            <AccordionIcon />
+          </AccordionButton>
+          <AccordionPanel pb={4}>
+            <UnorderedList spacing={3}>
+              <ListItem>CafeConnect: University Cafeteria WebApp, Lead Programmer and Project Manager - Jan 2024 – May 2024</ListItem>
+              <ListItem>JK Networks: A Reliable Network on top of UDP, Lead Programmer and Project Manager - Jan 2024 – May 2024</ListItem>
+              <ListItem>Spell Master Bot: AI-like Bot Algorithm, Lead Programmer and Project Manager - Aug 2023 – Nov 2023</ListItem>
+              <ListItem>Personal Portfolio Website, Sole Programmer - Jan 2024 – Present</ListItem>
+            </UnorderedList>
+          </AccordionPanel>
+        </AccordionItem>
+      </Accordion>
 
-      <Box marginBottom={8}>
-        <Heading as="h2" size="lg" marginBottom={4}>
-          Volunteering
-        </Heading>
-        <UnorderedList>
-          <ListItem>Interact: Rotary Sponsored Club, Vice President - Sep 2021 – Jul 2022</ListItem>
-          <ListItem>Inaash Organization, Member - Sep 2020 – Jul 2022</ListItem>
-          <ListItem>Nour International, Teaching Assistant - Sep 2018 – Jul 2020</ListItem>
-          <ListItem>Borderlands Sri Lanka, Member - Sep 2017 – May 2018</ListItem>
-        </UnorderedList>
-      </Box>
+      <Accordion allowToggle marginBottom={8}>
+        <AccordionItem>
+          <AccordionButton>
+            <Box flex="1" textAlign="left">
+              <Heading as="h2" size="lg">
+                Volunteering
+              </Heading>
+            </Box>
+            <AccordionIcon />
+          </AccordionButton>
+          <AccordionPanel pb={4}>
+            <UnorderedList>
+              <ListItem>Interact: Rotary Sponsored Club, Vice President - Sep 2021 – Jul 2022</ListItem>
+              <ListItem>Inaash Organization, Member - Sep 2020 – Jul 2022</ListItem>
+              <ListItem>Nour International, Teaching Assistant - Sep 2018 – Jul 2020</ListItem>
+              <ListItem>Borderlands Sri Lanka, Member - Sep 2017 – May 2018</ListItem>
+            </UnorderedList>
+          </AccordionPanel>
+        </AccordionItem>
+      </Accordion>
 
       <Box marginBottom={12}>
         <Heading as="h2" size="lg" marginBottom={6}>
