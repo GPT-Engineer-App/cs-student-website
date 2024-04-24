@@ -15,12 +15,21 @@ const Index = () => {
         </Box>
       </Flex>
 
-      <Box marginBottom={8}>
-        <Heading as="h2" size="lg" marginBottom={4}>
-          About Me
-        </Heading>
-        <Text>Hi, I'm John! I'm a passionate computer science student with a love for programming and problem-solving. I enjoy working on exciting projects and learning new technologies.</Text>
-      </Box>
+      <Accordion allowToggle marginBottom={8}>
+        <AccordionItem>
+          <AccordionButton>
+            <Box flex="1" textAlign="left">
+              <Heading as="h2" size="lg">
+                About Me
+              </Heading>
+            </Box>
+            <AccordionIcon />
+          </AccordionButton>
+          <AccordionPanel pb={4}>
+            <Text>Hi, I'm John! I'm a passionate computer science student with a love for programming and problem-solving. I enjoy working on exciting projects and learning new technologies.</Text>
+          </AccordionPanel>
+        </AccordionItem>
+      </Accordion>
 
       <Accordion allowToggle marginBottom={8}>
         <AccordionItem>
@@ -156,43 +165,61 @@ const Index = () => {
         </AccordionItem>
       </Accordion>
 
-      <Box marginBottom={12}>
-        <Heading as="h2" size="lg" marginBottom={6}>
-          Skills
-        </Heading>
-        <UnorderedList spacing={3}>
-          <ListItem>Java - Experienced in object-oriented programming</ListItem>
-          <ListItem>Python - Proficient in data analysis and machine learning</ListItem>
-          <ListItem>JavaScript - Skilled in front-end technologies</ListItem>
-          <ListItem>React - Advanced in building interactive UIs</ListItem>
-          <ListItem>Node.js - Knowledgeable in server-side scripting</ListItem>
-          <ListItem>C, C++ - Good with system-level programming</ListItem>
-          <ListItem>HTML, CSS - Competent in web design</ListItem>
-          <ListItem>MySQL, NoSQL - Experienced in database management</ListItem>
-          <ListItem>Database Systems - Understanding of complex database concepts</ListItem>
-          <ListItem>Software Engineering - Well-versed in software development life cycles</ListItem>
-          <ListItem>Computer Architecture - Familiar with the structure of computer systems</ListItem>
-          <ListItem>Office Package (Word, Excel, PowerPoint, Access) - Efficient in office tools</ListItem>
-        </UnorderedList>
-      </Box>
+      <Accordion allowToggle marginBottom={12}>
+        <AccordionItem>
+          <AccordionButton>
+            <Box flex="1" textAlign="left">
+              <Heading as="h2" size="lg">
+                Skills
+              </Heading>
+            </Box>
+            <AccordionIcon />
+          </AccordionButton>
+          <AccordionPanel pb={4}>
+            <UnorderedList spacing={3}>
+              <ListItem>Java - Experienced in object-oriented programming</ListItem>
+              <ListItem>Python - Proficient in data analysis and machine learning</ListItem>
+              <ListItem>JavaScript - Skilled in front-end technologies</ListItem>
+              <ListItem>React - Advanced in building interactive UIs</ListItem>
+              <ListItem>Node.js - Knowledgeable in server-side scripting</ListItem>
+              <ListItem>C, C++ - Good with system-level programming</ListItem>
+              <ListItem>HTML, CSS - Competent in web design</ListItem>
+              <ListItem>MySQL, NoSQL - Experienced in database management</ListItem>
+              <ListItem>Database Systems - Understanding of complex database concepts</ListItem>
+              <ListItem>Software Engineering - Well-versed in software development life cycles</ListItem>
+              <ListItem>Computer Architecture - Familiar with the structure of computer systems</ListItem>
+              <ListItem>Office Package (Word, Excel, PowerPoint, Access) - Efficient in office tools</ListItem>
+            </UnorderedList>
+          </AccordionPanel>
+        </AccordionItem>
+      </Accordion>
 
-      <Box>
-        <Heading as="h2" size="lg" marginBottom={4}>
-          Contact
-        </Heading>
-        <Text>Tel: +961 70545537 | jbh07@mail.aub.edu | jadhneiny123@gmail.com | Beirut, Lebanon</Text>
-        <Stack direction="row" spacing={4}>
-          <Link href="https://github.com/johndoe" isExternal>
-            <Icon as={FaGithub} boxSize={8} />
-          </Link>
-          <Link href="https://www.linkedin.com/in/johndoe" isExternal>
-            <Icon as={FaLinkedin} boxSize={8} />
-          </Link>
-          <Link href="mailto:johndoe@example.com" isExternal>
-            <Icon as={FaEnvelope} boxSize={8} />
-          </Link>
-        </Stack>
-      </Box>
+      <Accordion allowToggle marginBottom={8}>
+        <AccordionItem>
+          <AccordionButton>
+            <Box flex="1" textAlign="left">
+              <Heading as="h2" size="lg">
+                Contact
+              </Heading>
+            </Box>
+            <AccordionIcon />
+          </AccordionButton>
+          <AccordionPanel pb={4}>
+            <Text>Tel: +961 70545537 | jbh07@mail.aub.edu | jadhneiny123@gmail.com | Beirut, Lebanon</Text>
+            <Stack direction="row" spacing={4}>
+              <Link href="https://github.com/johndoe" isExternal>
+                <Icon as={FaGithub} boxSize={8} />
+              </Link>
+              <Link href="https://www.linkedin.com/in/johndoe" isExternal>
+                <Icon as={FaLinkedin} boxSize={8} />
+              </Link>
+              <Link href="mailto:johndoe@example.com" isExternal>
+                <Icon as={FaEnvelope} boxSize={8} />
+              </Link>
+            </Stack>
+          </AccordionPanel>
+        </AccordionItem>
+      </Accordion>
     </Box>
   );
 };
