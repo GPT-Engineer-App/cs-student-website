@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Heading, Text, Image, Stack, Flex, Link, Icon, UnorderedList, ListItem, Accordion, AccordionItem, AccordionButton, AccordionPanel, AccordionIcon } from "@chakra-ui/react";
+import { Box, Heading, Text, Image, Stack, Flex, Link, Icon, UnorderedList, ListItem, Accordion, AccordionItem, AccordionButton, AccordionPanel, AccordionIcon, Collapse } from "@chakra-ui/react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const Index = () => {
@@ -87,16 +87,18 @@ const Index = () => {
         </UnorderedList>
       </Box>
 
-      <Box marginBottom={8}>
-        <Heading as="h2" size="lg" marginBottom={4}>
+      <Box marginBottom={12}>
+        <Heading as="h2" size="lg" marginBottom={6}>
           Experience
         </Heading>
-        <UnorderedList>
-          <ListItem>CafeConnect: University Cafeteria WebApp, Lead Programmer and Project Manager - Jan 2024 – May 2024</ListItem>
-          <ListItem>JK Networks: A Reliable Network on top of UDP, Lead Programmer and Project Manager - Jan 2024 – May 2024</ListItem>
-          <ListItem>Spell Master Bot: AI-like Bot Algorithm, Lead Programmer and Project Manager - Aug 2023 – Nov 2023</ListItem>
-          <ListItem>Personal Portfolio Website, Sole Programmer - Jan 2024 – Present</ListItem>
-        </UnorderedList>
+        <Collapse startingHeight={100}>
+          <UnorderedList spacing={3}>
+            <ListItem>CafeConnect: University Cafeteria WebApp, Lead Programmer and Project Manager - Jan 2024 – May 2024</ListItem>
+            <ListItem>JK Networks: A Reliable Network on top of UDP, Lead Programmer and Project Manager - Jan 2024 – May 2024</ListItem>
+            <ListItem>Spell Master Bot: AI-like Bot Algorithm, Lead Programmer and Project Manager - Aug 2023 – Nov 2023</ListItem>
+            <ListItem>Personal Portfolio Website, Sole Programmer - Jan 2024 – Present</ListItem>
+          </UnorderedList>
+        </Collapse>
       </Box>
 
       <Box marginBottom={8}>
@@ -111,23 +113,23 @@ const Index = () => {
         </UnorderedList>
       </Box>
 
-      <Box marginBottom={8}>
-        <Heading as="h2" size="lg" marginBottom={4}>
+      <Box marginBottom={12}>
+        <Heading as="h2" size="lg" marginBottom={6}>
           Skills
         </Heading>
-        <UnorderedList>
-          <ListItem>Java</ListItem>
-          <ListItem>Python</ListItem>
-          <ListItem>JavaScript</ListItem>
-          <ListItem>React</ListItem>
-          <ListItem>Node.js</ListItem>
-          <ListItem>C, C++</ListItem>
-          <ListItem>HTML, CSS</ListItem>
-          <ListItem>MySQL, NoSQL</ListItem>
-          <ListItem>Database Systems</ListItem>
-          <ListItem>Software Engineering</ListItem>
-          <ListItem>Computer Architecture</ListItem>
-          <ListItem>Office Package (Word, Excel, PowerPoint, Access)</ListItem>
+        <UnorderedList spacing={3}>
+          <ListItem>Java - Experienced in object-oriented programming</ListItem>
+          <ListItem>Python - Proficient in data analysis and machine learning</ListItem>
+          <ListItem>JavaScript - Skilled in front-end technologies</ListItem>
+          <ListItem>React - Advanced in building interactive UIs</ListItem>
+          <ListItem>Node.js - Knowledgeable in server-side scripting</ListItem>
+          <ListItem>C, C++ - Good with system-level programming</ListItem>
+          <ListItem>HTML, CSS - Competent in web design</ListItem>
+          <ListItem>MySQL, NoSQL - Experienced in database management</ListItem>
+          <ListItem>Database Systems - Understanding of complex database concepts</ListItem>
+          <ListItem>Software Engineering - Well-versed in software development life cycles</ListItem>
+          <ListItem>Computer Architecture - Familiar with the structure of computer systems</ListItem>
+          <ListItem>Office Package (Word, Excel, PowerPoint, Access) - Efficient in office tools</ListItem>
         </UnorderedList>
       </Box>
 
