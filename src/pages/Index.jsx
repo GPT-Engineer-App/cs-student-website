@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Heading, Text, Image, Stack, Flex, Link, Icon, UnorderedList, ListItem } from "@chakra-ui/react";
+import { Box, Heading, Text, Image, Stack, Flex, Link, Icon, UnorderedList, ListItem, Accordion, AccordionItem, AccordionButton, AccordionPanel, AccordionIcon } from "@chakra-ui/react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const Index = () => {
@@ -41,7 +41,7 @@ const Index = () => {
         </Heading>
         <UnorderedList>
           <ListItem>
-            <Link href="https://github.com/johndoe/project1" isExternal>
+            <Link href="https://github.com/johndoe/project1" isExternal _hover={{ textDecoration: "underline" }}>
               Project 1
             </Link>{" "}
             - A web application for task management
@@ -55,17 +55,26 @@ const Index = () => {
         </UnorderedList>
       </Box>
 
-      <Box marginBottom={8}>
-        <Heading as="h2" size="lg" marginBottom={4}>
-          Education
-        </Heading>
-        <Text>American University of Beirut (AUB), Computer Science Degree - Sep 2022 – (Expected) Jun 2025</Text>
-        <Text>Majoring in Computer Science, Minor in Business, GPA: 3.3/4.0</Text>
-        <Text>Activities and societies: AUB Consulting Club, Computer Science Student Society, International Business Case Competitions</Text>
-        <Text>American Community School of Beirut (ACS), High School - Sep 2018 – Jun 2022</Text>
-        <Text>GPA: 3.7/4.0, High Distinction, National Honor Society (NHS) member</Text>
-        <Text>Lebanese Baccalaureate Certificate, and High School Certificate</Text>
-      </Box>
+      <Accordion allowToggle marginBottom={8}>
+        <AccordionItem>
+          <AccordionButton>
+            <Box flex="1" textAlign="left">
+              <Heading as="h2" size="lg">
+                Education
+              </Heading>
+            </Box>
+            <AccordionIcon />
+          </AccordionButton>
+          <AccordionPanel pb={4}>
+            <Text>American University of Beirut (AUB), Computer Science Degree - Sep 2022 – (Expected) Jun 2025</Text>
+            <Text>Majoring in Computer Science, Minor in Business, GPA: 3.3/4.0</Text>
+            <Text>Activities and societies: AUB Consulting Club, Computer Science Student Society, International Business Case Competitions</Text>
+            <Text>American Community School of Beirut (ACS), High School - Sep 2018 – Jun 2022</Text>
+            <Text>GPA: 3.7/4.0, High Distinction, National Honor Society (NHS) member</Text>
+            <Text>Lebanese Baccalaureate Certificate, and High School Certificate</Text>
+          </AccordionPanel>
+        </AccordionItem>
+      </Accordion>
 
       <Box marginBottom={8}>
         <Heading as="h2" size="lg" marginBottom={4}>
