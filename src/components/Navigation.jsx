@@ -6,10 +6,10 @@ const Navigation = () => {
   return (
     <Flex as="nav" padding="1.5rem" backgroundColor="gray.800" color="white" justifyContent="space-between">
       <Box>
-        <Link as={RouterLink} to="/" px={2}>
+        <Link as={RouterLink} to="/" px={2} _hover={{ textDecoration: "underline" }}>
           Home
         </Link>
-        <Link as={RouterLink} to="/projects" px={2}>
+        <Link as={RouterLink} to="/projects" px={2} _hover={{ textDecoration: "underline" }}>
           Projects
         </Link>
       </Box>

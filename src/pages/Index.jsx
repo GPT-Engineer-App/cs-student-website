@@ -7,11 +7,11 @@ const Index = () => {
   return (
     <Box>
       <Navigation />
-      <Box maxWidth="800px" margin="auto" padding={8}>
+      <Box maxWidth="800px" margin="auto" padding={8} backgroundColor="gray.100">
         <Flex alignItems="center" marginBottom={8}>
           <Image src="https://images.unsplash.com/photo-1544717305-2782549b5136?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxjb21wdXRlciUyMHNjaWVuY2UlMjBzdHVkZW50JTIwcG9ydHJhaXR8ZW58MHx8fHwxNzEyMTUxNDg2fDA&ixlib=rb-4.0.3&q=80&w=1080" alt="Profile" borderRadius="full" boxSize="150px" marginRight={8} />
           <Box>
-            <Heading as="h1" size="xl">
+            <Heading as="h1" size="2xl">
               Jad Hneiny
             </Heading>
             <Text fontSize="xl">Senior Computer Science Student</Text>
